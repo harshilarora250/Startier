@@ -58,7 +58,7 @@ app.command("/howmakememe", async ({ command, ack, respond}) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
-  await respond({ text: "Text"});
+  await respond({ text: "If you want to make a meme, you can simply go onto this website and make the meme! https://imgflip.com/memegenerator"});
 });
 
 (async () => {
