@@ -16,6 +16,10 @@ Give's you a project idea from a special hand-curated (with a tiny bit of AI) li
 
 Gives you a startup meme lol you'll laugh (probably) EXTREME DANGER CHOKING HAZARD ⚠️
 
+### `/howmakememe`
+
+This command tells you how to make a meme
+
 ## Usage 
 
 1. Open the slack from hackclub
