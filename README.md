@@ -38,7 +38,7 @@ That's it.
 
 ## How it works:
 
-
+[WATCH DEMO VIDEO HERE 🎥]: https://github.com/harshilarora250/Startier/blob/main/Screen%20Recording%202026-06-21%20at%204.11.53%E2%80%AFPM.mov
 
 ## Contact
 
