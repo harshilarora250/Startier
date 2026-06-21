@@ -36,10 +36,6 @@ AI was used for the idea list (tiny bit.) and for figuring out some bugs in pack
 
 That's it.
 
-## How it works:
-
-[WATCH DEMO VIDEO HERE 🎥]: <video controls src="https://github.com/harshilarora250/Startier/blob/main/Screen%20Recording%202026-06-21%20at%204.11.53%E2%80%AFPM.mov" title="DEMO"></video>
-
 ## Contact
 
 Created by _elipseday. If you have any questions or concerns please DM me on the HackClub Slack @elipseday or email me at elipseday@gmail.com.
