@@ -2,7 +2,7 @@
 
 Welcome and thank you for reading the Startier README. You can use the bot anywhere in the HackClub slack workspace, and in most channels.
 
-# Commands that you can use!
+## Commands that you can use!
 
 ### `/starty-ping`
 
