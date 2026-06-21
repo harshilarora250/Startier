@@ -23,10 +23,18 @@ app.command("/giveideastartier", async ({ command, ack, respond}) => {
 });
 
 app.command("/startiermeme", async ({ command, ack, respond}) => {
-const start = Date.now();
-await ack();
-const latency = Date.now() - start;
-await respond({ text: `testing!`});
+    const start = Date.now()
+    await ack();
+    const latency = Date.now() - start;
+    await respond({
+        text: "Here's your star heart emoji",
+    blocks: [
+        {
+            type:"image",
+            image_url: "https://i.imgflip.com/auv7i7.jpg",
+            alt_text:"star"
+        }
+    ]})
 });
 
 (async () => {
