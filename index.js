@@ -1,6 +1,9 @@
-require("dotenv").config();
+import dotenv from "dotenv";
+import fs from "fs";
+import path from "path"; // <-- Added this so path.join() works
+import { App } from "@slack/bolt"; // <-- Changed from require to import
 
-const { App } = require("@slack/bolt");
+dotenv.config(); // We only need this once
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
@@ -18,8 +21,20 @@ app.command("/starty-ping", async ({ command, ack, respond }) => {
 app.command("/giveideastartier", async ({ command, ack, respond}) => {
   const start = Date.now();
   await ack();
+
+  //Load JSON ideas
+  const filepath = path.join(process.cwd(), "ideas.json");
+  const data = JSON.parse(fs.readFileSync(filepath, "utf8"));
+
+  //Pick random idea
+  const ideas = data.ideas;
+  const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
+
   const latency = Date.now() - start;
-  await respond({ text: `testing!`});
+
+  await respond({
+    text: `💡 ${randomIdea}\n⚡ ${latency}ms`
+  });
 });
 
 app.command("/startiermeme", async ({ command, ack, respond}) => {
@@ -27,7 +42,7 @@ app.command("/startiermeme", async ({ command, ack, respond}) => {
     await ack();
     const latency = Date.now() - start;
     await respond({
-        text: "Here's your star heart emoji",
+        text: "Here's your meme heart emoji",
     blocks: [
         {
             type:"image",
