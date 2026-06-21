@@ -36,6 +36,10 @@ AI was used for the idea list (tiny bit.) and for figuring out some bugs in pack
 
 That's it.
 
+## How it works:
+
+
+
 ## Contact
 
 Created by _elipseday. If you have any questions or concerns please DM me on the HackClub Slack @elipseday or email me at elipseday@gmail.com.
