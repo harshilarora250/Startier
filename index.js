@@ -37,6 +37,7 @@ app.command("/giveideastartier", async ({ command, ack, respond}) => {
   });
 });
 
+//MEME!!
 app.command("/startiermeme", async ({ command, ack, respond}) => {
     const start = Date.now()
     await ack();
@@ -50,6 +51,14 @@ app.command("/startiermeme", async ({ command, ack, respond}) => {
             alt_text:"star"
         }
     ]})
+});
+
+//How to make meme?
+app.command("/howmakememe", async ({ command, ack, respond}) => {
+  const start = Date.now();
+  await ack();
+  const latency = Date.now() - start;
+  await respond({ text: "Text"});
 });
 
 (async () => {
