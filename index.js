@@ -22,7 +22,12 @@ app.command("/giveideastartier", async ({ command, ack, respond}) => {
   await respond({ text: `testing!`});
 });
 
-
+app.command("/startiermeme", async ({ command, ack, respond}) => {
+const start = Date.now();
+await ack();
+const latency = Date.now() - start;
+await respond({ text: `testing!`});
+});
 
 (async () => {
   await app.start();
