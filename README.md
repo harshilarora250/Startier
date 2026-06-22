@@ -14,7 +14,7 @@ Give's you a project idea from a special hand-curated (with a tiny bit of AI) li
 
 ### `/startiermeme`
 
-Gives you a startup meme lol you'll laugh (probably) EXTREME DANGER CHOKING HAZARD ⚠️
+Gives you a startup meme lol you'll laugh (probably) EXTREME DANGER CHOKING HAZARD WATCH WHILE NOT EATING/DRINKING!!⚠️
 
 ### `/howmakememe`
 
