@@ -8,6 +8,10 @@ Welcome and thank you for reading the Startier README. You can use the bot anywh
 
 Ping the bot to make sure it's working fine.
 
+### `/startier-help`
+
+This command shows all avalaible commands
+
 ### `/giveideastartier`
 
 Give's you a project idea from a special hand-curated (with a tiny bit of AI) list
@@ -36,7 +40,7 @@ Github Repo: https://github.com/harshilarora250/Startier/
 
 ## AI/Contributions
 
-AI was used for the idea list (tiny bit.) and for figuring out some bugs in package.json, and how to get random from file.
+AI was used for the idea list (tiny bit.) and for figuring out some bugs in package.json, and how to get random from file. I also used it for editing the package.json file so I can import the ideas from the JSON file and import the required modules.
 
 That's it.
 

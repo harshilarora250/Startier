@@ -11,6 +11,7 @@ const app = new App({
   socketMode: true
 });
 
+//Ping Startier
 app.command("/starty-ping", async ({ command, ack, respond }) => {
   const start = Date.now();
   await ack();
@@ -18,6 +19,15 @@ app.command("/starty-ping", async ({ command, ack, respond }) => {
   await respond({ text: `Pong! Startier Works!!\nLatency: ${latency}ms` });
 });
 
+//Get All Commands Command
+app.command("/startier-help", async ({ command, ack, respond}) => {
+  const start = Date.now();
+  await ack();
+  const latency = Date.now() - start;
+  await respond({ text: `Here are all the commands: /giveideastartier, /startiermeme, /howtomakememe, /starty-ping\nLatency: ${latency}ms`})
+})
+
+//Give idea command
 app.command("/giveideastartier", async ({ command, ack, respond}) => {
   const start = Date.now();
   await ack();
