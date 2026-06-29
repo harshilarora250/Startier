@@ -12,9 +12,21 @@ Ping the bot to make sure it's working fine.
 
 This command shows all avalaible commands
 
+### `/startier-audience`
+
+Who is **Startier** made for?
+
 ### `/giveideastartier`
 
-Give's you a project idea from a special hand-curated (with a tiny bit of AI) list
+Gives you a project idea from a special hand-curated (with a tiny bit of AI) list
+
+### `/startier-saas`
+
+This command gives you a **saas** idea
+
+### `/startier-shark`
+
+Startier becomes a shark and helps you with your idea.
 
 ### `/startiermeme`
 
@@ -37,6 +49,10 @@ This command tells you how to make a meme
 ## Source Code
 
 Github Repo: https://github.com/harshilarora250/Startier/
+
+## Forking
+
+To fork, just curl the repo above and run the command: node index.js (Remember to get your API keys from slackAPI and create a .env file and having these 2 commands: SLACK_APP_TOKEN, SLACK_BOT_TOKEN)
 
 ## AI/Contributions
 

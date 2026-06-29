@@ -24,7 +24,7 @@ app.command("/startier-help", async ({ command, ack, respond}) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
-  await respond({ text: `Here are all the commands: /giveideastartier, /startiermeme, /howtomakememe, /starty-ping, /startier-saas, /startier-audience\nLatency: ${latency}ms`})
+  await respond({ text: `Here are all the commands: /giveideastartier, /startiermeme, /howtomakememe, /starty-ping, /startier-saas, /startier-audience, /startier-audience\nLatency: ${latency}ms`})
 })
 
 //Give Saas Idea
@@ -42,6 +42,14 @@ app.command("/startier-audience", async ({ command, ack, respond}) => {
   await ack();
   const latency = Date.now() - start;
   await respond({ text: `Startier can be used by entreprenuers, students, and anyone looking for ideas`})
+})
+
+//Startier Shark
+app.command("/startier-shark", async ({ command, ack, respond}) => {
+  const start = Date.now();
+  await ack();
+  const latency = Date.now();
+  await respond({ text: `I'm out. Just give up.`})
 })
 
 //Give idea command
