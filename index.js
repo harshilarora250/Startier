@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import fs from "fs";
+import fs, { accessSync } from "fs";
 import path from "path"; // <-- Added this so path.join() works
 import { App } from "@slack/bolt"; // <-- Changed from require to import
 
@@ -24,7 +24,24 @@ app.command("/startier-help", async ({ command, ack, respond}) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
-  await respond({ text: `Here are all the commands: /giveideastartier, /startiermeme, /howtomakememe, /starty-ping\nLatency: ${latency}ms`})
+  await respond({ text: `Here are all the commands: /giveideastartier, /startiermeme, /howtomakememe, /starty-ping, /startier-saas, /startier-audience\nLatency: ${latency}ms`})
+})
+
+//Give Saas Idea
+
+app.command("/startier-saas", async ({ command, ack, respond}) => {
+  const start = Date.now();
+  await ack();
+  const latency = Date.now() - start;
+  await respond({ text: `A discord/slack bot that autosummarizes daily chat into newsletters.`})
+})
+
+//Startier Audience
+app.command("/startier-audience", async ({ command, ack, respond}) => {
+  const start = Date.now();
+  await ack();
+  const latency = Date.now() - start;
+  await respond({ text: `Startier can be used by entreprenuers, students, and anyone looking for ideas`})
 })
 
 //Give idea command
